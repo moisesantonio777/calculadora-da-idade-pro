@@ -1,0 +1,33 @@
+{
+	"folders": [
+		{
+			"name": ".vscode",
+			"path": ".vscode"
+		},
+		{
+			"name": "calculadora-da-idade-pro",
+			"path": "calculadora-da-idade-pro"
+		},
+		{
+			"name": "components",
+			"path": "components"
+		},
+		{
+			"name": "dist",
+			"path": "dist"
+		},
+		{
+			"name": "lib",
+			"path": "lib"
+		},
+		{
+			"name": "node_modules",
+			"path": "node_modules"
+		},
+		{
+			"name": "utils",
+			"path": "utils"
+		}
+	],
+	"settings": {}
+}
