@@ -1,0 +1,39 @@
+# Vercel Speed Insights Implementation
+
+## Summary
+Successfully implemented Vercel Speed Insights for the React-based age calculator application.
+
+## Changes Made
+
+### 1. Package Installation
+- Added `@vercel/speed-insights` package to the project dependencies
+- Installed using npm, which updated both `package.json` and `package-lock.json`
+
+### 2. Code Integration
+**Modified: App.tsx**
+- Imported the `SpeedInsights` component from `@vercel/speed-insights/react`
+- Added the `<SpeedInsights />` component to the main App component
+- Component is placed at the root level of the app's return statement, ensuring it tracks all page views and performance metrics
+
+### Implementation Details
+The SpeedInsights component was added following Vercel's best practices for React applications:
+- Import statement: `import { SpeedInsights } from '@vercel/speed-insights/react';`
+- Component placement: Added inside the main div wrapper, ensuring it loads with the application
+- The component will automatically track Web Vitals (LCP, FID, CLS, FCP, TTFB) and send data to Vercel's Speed Insights dashboard
+
+## Verification
+- ✅ Build completed successfully with no errors
+- ✅ Package installed correctly with all dependencies resolved
+- ✅ No TypeScript errors introduced
+- ✅ Application structure preserved
+
+## Next Steps for Deployment
+Once deployed to Vercel:
+1. Enable Speed Insights in the Vercel dashboard (Project → Speed Insights tab)
+2. The `/_vercel/speed-insights/script.js` route will be automatically available
+3. Performance metrics will start appearing in the dashboard after users visit the site
+
+## Files Modified
+- `App.tsx` - Added SpeedInsights component
+- `package.json` - Added @vercel/speed-insights dependency
+- `package-lock.json` - Updated with new dependency tree
