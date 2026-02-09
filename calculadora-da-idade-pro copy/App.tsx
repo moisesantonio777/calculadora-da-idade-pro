@@ -6,6 +6,7 @@ import DateInputGroup from './components/DateInputGroup';
 import Auth from './components/Auth';
 import { supabase } from './lib/supabaseClient';
 import { Session } from '@supabase/supabase-js';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const App: React.FC = () => {
   const [birthDate, setBirthDate] = useState<DateParts>({ day: '', month: '', year: '' });
@@ -162,6 +163,8 @@ const App: React.FC = () => {
         </button>
       )}
 
+      <SpeedInsights />
+      
       {!session ? (
         <Auth isDark={isDark} />
       ) : (
