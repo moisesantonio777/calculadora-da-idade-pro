@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { DateParts } from '../../types';
+import { DateParts } from '../types';
 
 interface DateInputGroupProps {
   label: string;
@@ -26,8 +26,8 @@ const DateInputGroup: React.FC<DateInputGroupProps> = ({ label, values, onChange
             value={values.day}
             onChange={(e) => onChange('day', e.target.value)}
             className={`w-full px-4 py-2 text-center rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all border ${isDark
-                ? 'bg-slate-800 border-slate-700 text-white placeholder-slate-600'
-                : 'bg-white border-slate-200 text-slate-900 placeholder-slate-300'
+              ? 'bg-slate-800 border-slate-700 text-white placeholder-slate-600'
+              : 'bg-white border-slate-200 text-slate-900 placeholder-slate-300'
               }`}
             min="1"
             max="31"
@@ -42,8 +42,8 @@ const DateInputGroup: React.FC<DateInputGroupProps> = ({ label, values, onChange
             value={values.month}
             onChange={(e) => onChange('month', e.target.value)}
             className={`w-full px-4 py-2 text-center rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all border ${isDark
-                ? 'bg-slate-800 border-slate-700 text-white placeholder-slate-600'
-                : 'bg-white border-slate-200 text-slate-900 placeholder-slate-300'
+              ? 'bg-slate-800 border-slate-700 text-white placeholder-slate-600'
+              : 'bg-white border-slate-200 text-slate-900 placeholder-slate-300'
               }`}
             min="1"
             max="12"
@@ -58,8 +58,8 @@ const DateInputGroup: React.FC<DateInputGroupProps> = ({ label, values, onChange
             value={values.year}
             onChange={(e) => onChange('year', e.target.value)}
             className={`w-full px-4 py-2 text-center rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all border ${isDark
-                ? 'bg-slate-800 border-slate-700 text-white placeholder-slate-600'
-                : 'bg-white border-slate-200 text-slate-900 placeholder-slate-300'
+              ? 'bg-slate-800 border-slate-700 text-white placeholder-slate-600'
+              : 'bg-white border-slate-200 text-slate-900 placeholder-slate-300'
               }`}
             min="1"
           />
